@@ -15,6 +15,7 @@
  */
 
 import java.nio.file.Files
+import java.nio.file.Path
 import java.nio.file.Paths
 
 project(group: "io.fusionauth", name: "fusionauth-client-builder", version: "1.15.8", licenses: ["ApacheV2_0"]) {
@@ -143,6 +144,10 @@ target(name: "build-node", description: "Build the Node.js Client Library") {
 target(name: "build-typescript", description: "Build the Typescript Client Library") {
   clientLibrary.
       buildClient(template: "src/main/client/typescript.client.ftl", outputFile: "../fusionauth-typescript-client/src/FusionAuthClient.ts")
+  clientLibrary.buildDomain(template: "src/main/client/typescript.domain.ftl",
+                            outputDir: "../fusionauth-typescript-client/src/domain",
+                            extension: "ts",
+                            layout: this.&flatLayout)
 }
 
 target(name: "build-javascript", description: "Build the JavaScript Client Library") {
@@ -186,4 +191,10 @@ target(name: "build-all", description: "Builds all client libraries", dependsOn:
                                                                                   "build-javascript",
                                                                                   "build-python",
                                                                                   "build-ruby"]) {
+}
+
+private static flatLayout(Path root, String name, String extension) {
+  def parts = name.split("\\.") // The components of the package (ex: com.inversoft.errors.Error)
+  root.toFile().mkdirs()
+  return root.resolve(parts[parts.size() - 1] + "." + extension) // Return a path to the file without any folders or package naming
 }
