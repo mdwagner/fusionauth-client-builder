@@ -1,0 +1,16 @@
+{
+  "packageName" : "io.fusionauth.domain.api",
+  "type" : "AuthenticatorResponse",
+  "description" : "/**\n * @author Trevor Smith\n */\n",
+  "fields" : {
+    "authenticator" : {
+      "type" : "Authenticator"
+    },
+    "authenticators" : {
+      "type" : "List",
+      "typeArguments" : [ {
+        "type" : "Authenticator"
+      } ]
+    }
+  }
+}
