@@ -2,5 +2,5 @@
   "packageName" : "io.fusionauth.domain",
   "type" : "AuthenticatorType",
   "description" : "/**\n * The types of authenticators.\n *\n * @author Trevor Smith\n */\n",
-  "enum" : [ "LDAP" ]
+  "enum" : [ "ldap", "generic" ]
 }
