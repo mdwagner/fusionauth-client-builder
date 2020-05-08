@@ -5,6 +5,12 @@
   "fields" : {
     "authenticator" : {
       "type" : "Authenticator"
+    },
+    "authenticators" : {
+      "type" : "List",
+      "typeArguments" : [ {
+        "type" : "Authenticator"
+      } ]
     }
   }
 }
