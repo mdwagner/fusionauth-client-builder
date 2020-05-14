@@ -37,7 +37,7 @@
     "name" : {
       "type" : "String"
     },
-    "sslCertificateId" : {
+    "sslCertificateKeysId" : {
       "type" : "UUID"
     },
     "type" : {
