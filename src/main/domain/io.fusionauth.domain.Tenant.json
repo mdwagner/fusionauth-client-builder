@@ -19,6 +19,12 @@
         "type" : "Object"
       } ]
     },
+    "authenticatorPolicies" : {
+      "type" : "List",
+      "typeArguments" : [ {
+        "type" : "AuthenticatorPolicy"
+      } ]
+    },
     "configured" : {
       "type" : "boolean"
     },
