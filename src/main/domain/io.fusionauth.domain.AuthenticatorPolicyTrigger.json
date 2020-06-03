@@ -1,6 +1,0 @@
-{
-  "packageName" : "io.fusionauth.domain",
-  "type" : "AuthenticatorPolicyTrigger",
-  "description" : "/**\n * @author Trevor Smith\n */\n",
-  "enum" : [ "always" ]
-}

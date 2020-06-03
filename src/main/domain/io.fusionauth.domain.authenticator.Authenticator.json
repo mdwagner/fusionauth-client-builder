@@ -1,5 +1,5 @@
 {
-  "packageName" : "io.fusionauth.domain",
+  "packageName" : "io.fusionauth.domain.authenticator",
   "type" : "Authenticator",
   "description" : "/**\n * Models an external authenticator.\n *\n * @author Trevor Smith\n */\n",
   "implements" : [ {
@@ -11,6 +11,9 @@
     "type" : "_InternalJSONColumn"
   } ],
   "fields" : {
+    "connectTimeout" : {
+      "type" : "int"
+    },
     "data" : {
       "type" : "Map",
       "typeArguments" : [ {
@@ -34,8 +37,14 @@
     "insertInstant" : {
       "type" : "ZonedDateTime"
     },
+    "lambdaConfiguration" : {
+      "type" : "LambdaConfiguration"
+    },
     "name" : {
       "type" : "String"
+    },
+    "readTimeout" : {
+      "type" : "int"
     },
     "sslCertificateKeysId" : {
       "type" : "UUID"

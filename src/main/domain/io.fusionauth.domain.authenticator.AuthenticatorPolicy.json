@@ -1,5 +1,5 @@
 {
-  "packageName" : "io.fusionauth.domain",
+  "packageName" : "io.fusionauth.domain.authenticator",
   "type" : "AuthenticatorPolicy",
   "description" : "/**\n * @author Trevor Smith\n */\n",
   "implements" : [ {
@@ -22,11 +22,11 @@
         "type" : "Object"
       } ]
     },
-    "migrateIdentity" : {
-      "type" : "boolean"
+    "executionTrigger" : {
+      "type" : "ExecutionTrigger"
     },
-    "run" : {
-      "type" : "AuthenticatorPolicyTrigger"
+    "migrationStrategy" : {
+      "type" : "MigrationStrategy"
     },
     "sequence" : {
       "type" : "int"
