@@ -11,6 +11,9 @@
     "type" : "_InternalJSONColumn"
   } ],
   "fields" : {
+    "authenticationUri" : {
+      "type" : "URI"
+    },
     "connectTimeout" : {
       "type" : "int"
     },
@@ -46,14 +49,14 @@
     "readTimeout" : {
       "type" : "int"
     },
+    "retrieveUserUri" : {
+      "type" : "URI"
+    },
     "sslCertificateKeyId" : {
       "type" : "UUID"
     },
     "type" : {
       "type" : "AuthenticatorType"
-    },
-    "uri" : {
-      "type" : "URI"
     }
   }
 }
