@@ -46,7 +46,7 @@
     "readTimeout" : {
       "type" : "int"
     },
-    "sslCertificateKeysId" : {
+    "sslCertificateKeyId" : {
       "type" : "UUID"
     },
     "type" : {
