@@ -15,7 +15,25 @@
     "name" : "SAMLv2Populate",
     "args" : [ "populate" ]
   }, {
-    "name" : "LdapReconcile",
+    "name" : "AppleReconcile",
     "args" : [ "reconcile" ]
-  } ]
+  }, {
+    "name" : "ExternalJWTReconcile",
+    "args" : [ "reconcile" ]
+  }, {
+    "name" : "FacebookReconcile",
+    "args" : [ "reconcile" ]
+  }, {
+    "name" : "GoogleReconcile",
+    "args" : [ "reconcile" ]
+  }, {
+    "name" : "HYPRReconcile",
+    "args" : [ "reconcile" ]
+  }, {
+    "name" : "TwitterReconcile",
+    "args" : [ "reconcile" ]
+  }, {
+     "name" : "LdapReconcile",
+     "args" : [ "reconcile" ]
+  }]
 }
