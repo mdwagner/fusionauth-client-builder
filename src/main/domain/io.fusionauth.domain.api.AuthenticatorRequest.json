@@ -3,7 +3,7 @@
   "type" : "AuthenticatorRequest",
   "description" : "/**\n * @author Trevor Smith\n */\n",
   "fields" : {
-    "authenticator" : {
+     "connector" : {
       "type" : "Authenticator"
     }
   }

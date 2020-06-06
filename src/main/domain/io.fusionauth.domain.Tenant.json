@@ -19,7 +19,7 @@
         "type" : "Object"
       } ]
     },
-    "authenticatorPolicies" : {
+    "connectorPolicies" : {
       "type" : "List",
       "typeArguments" : [ {
         "type" : "AuthenticatorPolicy"

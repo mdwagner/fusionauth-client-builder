@@ -11,7 +11,7 @@
     "type" : "_InternalJSONColumn"
   } ],
   "fields" : {
-    "authenticatorId" : {
+    "connectorId" : {
       "type" : "UUID"
     },
     "data" : {
