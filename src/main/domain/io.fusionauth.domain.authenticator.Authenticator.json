@@ -14,6 +14,9 @@
     "authenticationUri" : {
       "type" : "URI"
     },
+    "baseStructure" : {
+      "type" : "String"
+    },
     "connectTimeout" : {
       "type" : "int"
     },
@@ -24,6 +27,12 @@
       }, {
         "type" : "Object"
       } ]
+    },
+    "debug" : {
+      "type" : "boolean"
+    },
+    "emailAttribute" : {
+      "type" : "String"
     },
     "headers" : {
       "type" : "HTTPHeaders"
@@ -37,6 +46,9 @@
     "id" : {
       "type" : "UUID"
     },
+    "identifyingAttribute" : {
+      "type" : "String"
+    },
     "insertInstant" : {
       "type" : "ZonedDateTime"
     },
@@ -49,11 +61,23 @@
     "readTimeout" : {
       "type" : "int"
     },
+    "requestedAttributes" : {
+      "type" : "List",
+      "typeArguments" : [ {
+        "type" : "String"
+      } ]
+    },
     "retrieveUserUri" : {
       "type" : "URI"
     },
     "sslCertificateKeyId" : {
       "type" : "UUID"
+    },
+    "systemAccountDn" : {
+      "type" : "String"
+    },
+    "systemAccountPassword" : {
+      "type" : "String"
     },
     "type" : {
       "type" : "AuthenticatorType"

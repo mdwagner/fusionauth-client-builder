@@ -1,7 +1,7 @@
 {
   "packageName" : "io.fusionauth.domain.authenticator",
   "type" : "AuthenticatorPolicy",
-  "description" : "/**\n * @author Trevor Smith\n */\n",
+  "description" : "// - Why does this implement _InternalJSONColumn, and why does this use @InternalJSONColumn?, does this have it's own table with a data column?\n",
   "implements" : [ {
     "type" : "Buildable",
     "typeArguments" : [ {
