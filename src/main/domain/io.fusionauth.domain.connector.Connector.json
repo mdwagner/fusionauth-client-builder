@@ -11,7 +11,7 @@
     "type" : "_InternalJSONColumn"
   } ],
   "fields" : {
-    "authenticationUri" : {
+    "authenticationURL" : {
       "type" : "URI"
     },
     "baseStructure" : {
@@ -67,7 +67,7 @@
         "type" : "String"
       } ]
     },
-    "retrieveUserUri" : {
+    "retrieveUserURL" : {
       "type" : "URI"
     },
     "sslCertificateKeyId" : {
