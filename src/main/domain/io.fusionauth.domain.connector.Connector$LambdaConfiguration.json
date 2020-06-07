@@ -1,5 +1,5 @@
 {
-  "packageName" : "io.fusionauth.domain.authenticator",
+  "packageName" : "io.fusionauth.domain.connector",
   "type" : "LambdaConfiguration",
   "fields" : {
     "reconcileId" : {

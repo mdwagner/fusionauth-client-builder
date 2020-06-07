@@ -1,6 +1,0 @@
-{
-  "packageName" : "io.fusionauth.domain.authenticator",
-  "type" : "MigrationStrategy",
-  "description" : "/**\n * @author Trevor Smith\n */\n",
-  "enum" : [ "createShellUser", "synchronizeUser", "migrateIdentity" ]
-}

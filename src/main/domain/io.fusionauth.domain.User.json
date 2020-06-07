@@ -25,13 +25,13 @@
     "active" : {
       "type" : "boolean"
     },
-    "connectorId" : {
-      "type" : "UUID"
-    },
     "birthDate" : {
       "type" : "LocalDate"
     },
     "cleanSpeakId" : {
+      "type" : "UUID"
+    },
+    "connectorId" : {
       "type" : "UUID"
     },
     "data" : {

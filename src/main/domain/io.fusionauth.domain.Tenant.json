@@ -19,14 +19,14 @@
         "type" : "Object"
       } ]
     },
+    "configured" : {
+      "type" : "boolean"
+    },
     "connectorPolicies" : {
       "type" : "List",
       "typeArguments" : [ {
-        "type" : "AuthenticatorPolicy"
+        "type" : "ConnectorPolicy"
       } ]
-    },
-    "configured" : {
-      "type" : "boolean"
     },
     "emailConfiguration" : {
       "type" : "EmailConfiguration"

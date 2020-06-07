@@ -1,11 +1,11 @@
 {
-  "packageName" : "io.fusionauth.domain.authenticator",
-  "type" : "Authenticator",
+  "packageName" : "io.fusionauth.domain.connector",
+  "type" : "Connector",
   "description" : "/**\n * Models an external authenticator.\n *\n * @author Trevor Smith\n */\n",
   "implements" : [ {
     "type" : "Buildable",
     "typeArguments" : [ {
-      "type" : "Authenticator"
+      "type" : "Connector"
     } ]
   }, {
     "type" : "_InternalJSONColumn"
@@ -80,7 +80,7 @@
       "type" : "String"
     },
     "type" : {
-      "type" : "AuthenticatorType"
+      "type" : "ConnectorType"
     }
   }
 }

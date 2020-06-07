@@ -1,0 +1,16 @@
+{
+  "packageName" : "io.fusionauth.domain.connector",
+  "type" : "ExecutionTrigger",
+  "description" : "// TODO : Authenticators : Is this a trigger or just a policy?\n",
+  "fields" : {
+    "filterDomains" : {
+      "type" : "List",
+      "typeArguments" : [ {
+        "type" : "String"
+      } ]
+    },
+    "type" : {
+      "type" : "ExecutionTriggerType"
+    }
+  }
+}

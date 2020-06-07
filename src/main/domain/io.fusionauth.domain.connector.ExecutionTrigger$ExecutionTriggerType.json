@@ -1,0 +1,5 @@
+{
+  "packageName" : "io.fusionauth.domain.connector",
+  "type" : "ExecutionTriggerType",
+  "enum" : [ "Always", "FilterByDomain" ]
+}

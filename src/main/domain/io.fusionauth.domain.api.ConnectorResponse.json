@@ -1,15 +1,15 @@
 {
   "packageName" : "io.fusionauth.domain.api",
-  "type" : "AuthenticatorResponse",
+  "type" : "ConnectorResponse",
   "description" : "/**\n * @author Trevor Smith\n */\n",
   "fields" : {
-     "connector" : {
-      "type" : "Authenticator"
+    "connector" : {
+      "type" : "Connector"
     },
-    "authenticators" : {
+    "connectors" : {
       "type" : "List",
       "typeArguments" : [ {
-        "type" : "Authenticator"
+        "type" : "Connector"
       } ]
     }
   }
