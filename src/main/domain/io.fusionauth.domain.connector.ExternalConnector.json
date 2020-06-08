@@ -1,7 +1,7 @@
 {
   "packageName" : "io.fusionauth.domain.connector",
   "type" : "ExternalConnector",
-  "description" : "// TODO : Authenticators : This additional layer seems odd to me. THis 'attribute' of a connector is probably better suited to be an interface.\n",
+  "description" : "/**\n * Models an external connector.\n *\n * @author Trevor Smith\n */\n",
   "extends" : [ {
     "type" : "BaseConnector"
   } ],
