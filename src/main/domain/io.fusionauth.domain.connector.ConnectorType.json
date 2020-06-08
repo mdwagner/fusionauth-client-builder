@@ -2,5 +2,14 @@
   "packageName" : "io.fusionauth.domain.connector",
   "type" : "ConnectorType",
   "description" : "/**\n * The types of connectors.\n *\n * @author Trevor Smith\n */\n",
-  "enum" : [ "FusionAuth", "Generic", "LDAP" ]
+  "enum" : [ {
+    "name" : "FusionAuth",
+    "args" : [ ]
+  }, {
+    "name" : "Generic",
+    "args" : [ ]
+  }, {
+    "name" : "LDAP",
+    "args" : [ ]
+  } ]
 }

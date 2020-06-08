@@ -4,12 +4,12 @@
   "description" : "/**\n * @author Trevor Smith\n */\n",
   "fields" : {
     "connector" : {
-      "type" : "Connector"
+      "type" : "BaseConnector"
     },
     "connectors" : {
       "type" : "List",
       "typeArguments" : [ {
-        "type" : "Connector"
+        "type" : "BaseConnector"
       } ]
     }
   }
