@@ -33,7 +33,7 @@
     "name" : "TwitterReconcile",
     "args" : [ "reconcile" ]
   }, {
-    "name" : "LdapReconcile",
+    "name" : "LDAPConnectorReconcile",
     "args" : [ "reconcile" ]
   } ]
 }
