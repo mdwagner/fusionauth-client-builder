@@ -1,0 +1,40 @@
+{
+  "packageName" : "io.fusionauth.domain.connector",
+  "type" : "LDAPConnector",
+  "description" : "/**\n * Models an LDAP connector.\n *\n * @author Trevor Smith\n */\n",
+  "extends" : [ {
+    "type" : "ExternalConnector"
+  } ],
+  "implements" : [ {
+    "type" : "Buildable",
+    "typeArguments" : [ {
+      "type" : "LDAPConnector"
+    } ]
+  } ],
+  "fields" : {
+    "baseStructure" : {
+      "type" : "String"
+    },
+    "emailAttribute" : {
+      "type" : "String"
+    },
+    "identifyingAttribute" : {
+      "type" : "String"
+    },
+    "lambdaConfiguration" : {
+      "type" : "LambdaConfiguration"
+    },
+    "requestedAttributes" : {
+      "type" : "List",
+      "typeArguments" : [ {
+        "type" : "String"
+      } ]
+    },
+    "systemAccountDn" : {
+      "type" : "String"
+    },
+    "systemAccountPassword" : {
+      "type" : "String"
+    }
+  }
+}
