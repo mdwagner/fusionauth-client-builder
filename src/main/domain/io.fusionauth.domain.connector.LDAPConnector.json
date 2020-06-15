@@ -3,17 +3,28 @@
   "type" : "LDAPConnector",
   "description" : "/**\n * Models an LDAP connector.\n *\n * @author Trevor Smith\n */\n",
   "extends" : [ {
-    "type" : "ExternalConnector"
+    "type" : "BaseConnector"
   } ],
   "implements" : [ {
     "type" : "Buildable",
     "typeArguments" : [ {
       "type" : "LDAPConnector"
     } ]
+  }, {
+    "type" : "ExternalConnector"
   } ],
   "fields" : {
+    "authenticationURL" : {
+      "type" : "URI"
+    },
     "baseStructure" : {
       "type" : "String"
+    },
+    "connectTimeout" : {
+      "type" : "int"
+    },
+    "debug" : {
+      "type" : "boolean"
     },
     "emailAttribute" : {
       "type" : "String"
@@ -23,6 +34,9 @@
     },
     "lambdaConfiguration" : {
       "type" : "LambdaConfiguration"
+    },
+    "readTimeout" : {
+      "type" : "int"
     },
     "requestedAttributes" : {
       "type" : "List",

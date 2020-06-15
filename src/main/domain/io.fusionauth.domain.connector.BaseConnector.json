@@ -6,9 +6,6 @@
     "type" : "_InternalJSONColumn"
   } ],
   "fields" : {
-    "authenticationURL" : {
-      "type" : "URI"
-    },
     "data" : {
       "type" : "Map",
       "typeArguments" : [ {
@@ -25,9 +22,6 @@
     },
     "name" : {
       "type" : "String"
-    },
-    "sslCertificateKeyId" : {
-      "type" : "UUID"
     },
     "type" : {
       "type" : "ConnectorType"

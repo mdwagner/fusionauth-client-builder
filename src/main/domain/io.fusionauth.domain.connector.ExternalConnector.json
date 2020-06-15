@@ -1,19 +1,6 @@
 {
   "packageName" : "io.fusionauth.domain.connector",
   "type" : "ExternalConnector",
-  "description" : "/**\n * Models an external connector.\n *\n * @author Trevor Smith\n */\n",
-  "extends" : [ {
-    "type" : "BaseConnector"
-  } ],
-  "fields" : {
-    "connectTimeout" : {
-      "type" : "int"
-    },
-    "debug" : {
-      "type" : "boolean"
-    },
-    "readTimeout" : {
-      "type" : "int"
-    }
-  }
+  "description" : "/**\n * Interface for all external connectors.\n *\n * @author Trevor Smith\n */\n",
+  "fields" : { }
 }

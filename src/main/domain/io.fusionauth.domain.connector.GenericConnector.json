@@ -3,15 +3,26 @@
   "type" : "GenericConnector",
   "description" : "/**\n * Models a generic connector.\n *\n * @author Trevor Smith\n */\n",
   "extends" : [ {
-    "type" : "ExternalConnector"
+    "type" : "BaseConnector"
   } ],
   "implements" : [ {
     "type" : "Buildable",
     "typeArguments" : [ {
       "type" : "GenericConnector"
     } ]
+  }, {
+    "type" : "ExternalConnector"
   } ],
   "fields" : {
+    "authenticationURL" : {
+      "type" : "URI"
+    },
+    "connectTimeout" : {
+      "type" : "int"
+    },
+    "debug" : {
+      "type" : "boolean"
+    },
     "headers" : {
       "type" : "HTTPHeaders"
     },
@@ -21,8 +32,14 @@
     "httpAuthenticationUsername" : {
       "type" : "String"
     },
+    "readTimeout" : {
+      "type" : "int"
+    },
     "retrieveUserURL" : {
       "type" : "URI"
+    },
+    "sslCertificateKeyId" : {
+      "type" : "UUID"
     }
   }
 }
