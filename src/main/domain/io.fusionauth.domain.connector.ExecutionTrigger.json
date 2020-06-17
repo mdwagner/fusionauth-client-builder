@@ -4,7 +4,7 @@
   "description" : "// TODO : Authenticators : Is this a trigger or just a policy?\n",
   "fields" : {
     "filterDomains" : {
-      "type" : "List",
+      "type" : "Set",
       "typeArguments" : [ {
         "type" : "String"
       } ]
