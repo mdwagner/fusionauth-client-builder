@@ -42,7 +42,7 @@
     "securityMethod" : {
       "type" : "LDAPSecurityMethod"
     },
-    "systemAccountDn" : {
+    "systemAccountDN" : {
       "type" : "String"
     },
     "systemAccountPassword" : {
