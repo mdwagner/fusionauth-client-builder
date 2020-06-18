@@ -10,8 +10,6 @@
     "typeArguments" : [ {
       "type" : "LDAPConnector"
     } ]
-  }, {
-    "type" : "ExternalConnector"
   } ],
   "fields" : {
     "authenticationURL" : {
@@ -22,9 +20,6 @@
     },
     "connectTimeout" : {
       "type" : "int"
-    },
-    "debug" : {
-      "type" : "boolean"
     },
     "emailAttribute" : {
       "type" : "String"

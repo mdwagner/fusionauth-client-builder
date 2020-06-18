@@ -10,8 +10,6 @@
     "typeArguments" : [ {
       "type" : "GenericConnector"
     } ]
-  }, {
-    "type" : "ExternalConnector"
   } ],
   "fields" : {
     "authenticationURL" : {
@@ -19,9 +17,6 @@
     },
     "connectTimeout" : {
       "type" : "int"
-    },
-    "debug" : {
-      "type" : "boolean"
     },
     "headers" : {
       "type" : "HTTPHeaders"
