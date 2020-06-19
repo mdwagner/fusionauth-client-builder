@@ -27,9 +27,6 @@
     },
     "migrationStrategy" : {
       "type" : "MigrationStrategy"
-    },
-    "sequence" : {
-      "type" : "int"
     }
   }
 }
