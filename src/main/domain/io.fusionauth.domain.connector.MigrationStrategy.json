@@ -2,5 +2,5 @@
   "packageName" : "io.fusionauth.domain.connector",
   "type" : "MigrationStrategy",
   "description" : "/**\n * @author Trevor Smith\n */\n",
-  "enum" : [ "ShellUser", "SynchronizeUser", "MigrateIdentity" ]
+  "enum" : [ "CreateShadowUser", "SynchronizeUser", "MigrateIdentity" ]
 }
