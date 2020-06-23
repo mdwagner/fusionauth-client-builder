@@ -11,6 +11,9 @@
     "type" : "_InternalJSONColumn"
   } ],
   "fields" : {
+    "action" : {
+      "type" : "ConnectorUserAction"
+    },
     "connectorId" : {
       "type" : "UUID"
     },
@@ -22,11 +25,11 @@
         "type" : "Object"
       } ]
     },
-    "executionTrigger" : {
-      "type" : "ExecutionTrigger"
-    },
-    "migrationStrategy" : {
-      "type" : "MigrationStrategy"
+    "domains" : {
+      "type" : "Set",
+      "typeArguments" : [ {
+        "type" : "String"
+      } ]
     }
   }
 }
