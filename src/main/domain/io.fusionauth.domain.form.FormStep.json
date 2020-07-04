@@ -1,0 +1,21 @@
+{
+  "packageName" : "io.fusionauth.domain.form",
+  "type" : "FormStep",
+  "description" : "/**\n * @author Daniel DeGroff\n */\n",
+  "implements" : [ {
+    "type" : "Buildable",
+    "typeArguments" : [ {
+      "type" : "FormStep"
+    } ]
+  }, {
+    "type" : "_InternalJSONColumn"
+  } ],
+  "fields" : {
+    "fields" : {
+      "type" : "List",
+      "typeArguments" : [ {
+        "type" : "FormField"
+      } ]
+    }
+  }
+}
