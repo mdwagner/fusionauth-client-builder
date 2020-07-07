@@ -20,6 +20,9 @@
     "confirm" : {
       "type" : "boolean"
     },
+    "consentId" : {
+      "type" : "UUID"
+    },
     "control" : {
       "type" : "FormControl"
     },
