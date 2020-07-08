@@ -7,8 +7,6 @@
     "typeArguments" : [ {
       "type" : "FormStep"
     } ]
-  }, {
-    "type" : "_InternalJSONColumn"
   } ],
   "fields" : {
     "fields" : {

@@ -17,6 +17,9 @@
     "confirmPassword" : {
       "type" : "boolean"
     },
+    "custom" : {
+      "type" : "CustomRegistration"
+    },
     "firstName" : {
       "type" : "Requirable"
     },
