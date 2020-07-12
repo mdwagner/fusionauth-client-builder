@@ -66,6 +66,9 @@
     "lastName" : {
       "type" : "String"
     },
+    "lastUpdateInstant" : {
+      "type" : "ZonedDateTime"
+    },
     "middleName" : {
       "type" : "String"
     },

@@ -46,6 +46,9 @@
     "key" : {
       "type" : "String"
     },
+    "lastUpdateInstant" : {
+      "type" : "ZonedDateTime"
+    },
     "name" : {
       "type" : "String"
     },

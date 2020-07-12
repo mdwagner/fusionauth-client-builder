@@ -23,6 +23,9 @@
     "insertInstant" : {
       "type" : "ZonedDateTime"
     },
+    "lastUpdateInstant" : {
+      "type" : "ZonedDateTime"
+    },
     "name" : {
       "type" : "String"
     },

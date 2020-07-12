@@ -49,11 +49,17 @@
     "id" : {
       "type" : "UUID"
     },
+    "insertInstant" : {
+      "type" : "ZonedDateTime"
+    },
     "issuer" : {
       "type" : "String"
     },
     "jwtConfiguration" : {
       "type" : "JWTConfiguration"
+    },
+    "lastUpdateInstant" : {
+      "type" : "ZonedDateTime"
     },
     "logoutURL" : {
       "type" : "URI"

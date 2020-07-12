@@ -24,7 +24,7 @@
     "comment" : {
       "type" : "String"
     },
-    "createInstant" : {
+    "insertInstant" : {
       "type" : "ZonedDateTime"
     },
     "emailUserOnEnd" : {
