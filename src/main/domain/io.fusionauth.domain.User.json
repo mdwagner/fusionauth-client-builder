@@ -31,9 +31,6 @@
     "cleanSpeakId" : {
       "type" : "UUID"
     },
-    "connectorId" : {
-      "type" : "UUID"
-    },
     "data" : {
       "type" : "Map",
       "typeArguments" : [ {
@@ -60,9 +57,6 @@
     "insertInstant" : {
       "type" : "ZonedDateTime"
     },
-    "lastLoginInstant" : {
-      "type" : "ZonedDateTime"
-    },
     "lastName" : {
       "type" : "String"
     },
@@ -83,21 +77,6 @@
     },
     "timezone" : {
       "type" : "ZoneId"
-    },
-    "twoFactorDelivery" : {
-      "type" : "TwoFactorDelivery"
-    },
-    "twoFactorEnabled" : {
-      "type" : "boolean"
-    },
-    "twoFactorSecret" : {
-      "type" : "String"
-    },
-    "username" : {
-      "type" : "String"
-    },
-    "usernameStatus" : {
-      "type" : "ContentStatus"
     },
     "memberships" : {
       "type" : "List",
