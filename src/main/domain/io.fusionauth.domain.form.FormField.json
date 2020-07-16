@@ -11,12 +11,6 @@
     "type" : "_InternalJSONColumn"
   } ],
   "fields" : {
-    "admin" : {
-      "type" : "List",
-      "typeArguments" : [ {
-        "type" : "FormFieldAdminPolicy"
-      } ]
-    },
     "confirm" : {
       "type" : "boolean"
     },

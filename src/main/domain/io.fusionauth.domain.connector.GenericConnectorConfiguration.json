@@ -1,14 +1,14 @@
 {
   "packageName" : "io.fusionauth.domain.connector",
-  "type" : "GenericConnector",
+  "type" : "GenericConnectorConfiguration",
   "description" : "/**\n * Models a generic connector.\n *\n * @author Trevor Smith\n */\n",
   "extends" : [ {
-    "type" : "BaseConnector"
+    "type" : "BaseConnectorConfiguration"
   } ],
   "implements" : [ {
     "type" : "Buildable",
     "typeArguments" : [ {
-      "type" : "GenericConnector"
+      "type" : "GenericConnectorConfiguration"
     } ]
   } ],
   "fields" : {
