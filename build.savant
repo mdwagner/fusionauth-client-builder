@@ -18,7 +18,7 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 javaErrorVersion = "2.2.2"
-fusionauthJWTVersion = "3.5.0"
+fusionauthJWTVersion = "3.4.1" // We are using 3.5.0, but I want the domain from 3.4.1 for now.
 
 project(group: "io.fusionauth", name: "fusionauth-client-builder", version: "1.18.0", licenses: ["ApacheV2_0"]) {
   workflow {
