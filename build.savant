@@ -72,6 +72,8 @@ target(name: "generateDomain", description: "Generates all of the json files for
    "io.fusionauth.jwt.domain.KeyType.json",
    "io.fusionauth.jwt.domain.Type.json"]
       .forEach({ Files.deleteIfExists(Paths.get("src/main/domain").resolve(it)) })
+
+  // TODO We should add a dependency group on java-error and fusionauth-jwt, copy them to a tmp dir, explode them and then use that for building the domain
 }
 
 target(name: "idea", description: "Updates the IntelliJ IDEA module file") {
