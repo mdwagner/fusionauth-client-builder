@@ -58,6 +58,11 @@ release = loadPlugin(id: "org.savantbuild.plugin:release-git:1.0.0")
 clientLibrary.settings.debug = false
 
 target(name: "extract-source-jars") {
+  // Download the source JARs
+  dependency.resolve() {
+    dependencies(group: "source-jars", transitive: true, fetchSource: true)
+  }
+
   // clear out the expanded jars
   file.prune(dir: "build/src/")
 
