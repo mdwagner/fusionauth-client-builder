@@ -30,9 +30,6 @@
     "readTimeout" : {
       "type" : "int"
     },
-    "retrieveUserURL" : {
-      "type" : "URI"
-    },
     "sslCertificateKeyId" : {
       "type" : "UUID"
     }

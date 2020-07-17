@@ -11,9 +11,6 @@
     "type" : "_InternalJSONColumn"
   } ],
   "fields" : {
-    "action" : {
-      "type" : "ConnectorUserAction"
-    },
     "connectorId" : {
       "type" : "UUID"
     },
@@ -30,6 +27,9 @@
       "typeArguments" : [ {
         "type" : "String"
       } ]
+    },
+    "migrate" : {
+      "type" : "boolean"
     }
   }
 }
