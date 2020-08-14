@@ -84,6 +84,9 @@
     },
     "userDeletePolicy" : {
       "type" : "TenantUserDeletePolicy"
+    },
+    "userEditFormId" : {
+      "type" : "UUID"
     }
   }
 }

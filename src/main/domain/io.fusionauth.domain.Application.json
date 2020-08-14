@@ -63,6 +63,9 @@
     "registrationDeletePolicy" : {
       "type" : "ApplicationRegistrationDeletePolicy"
     },
+    "registrationEditFormId" : {
+      "type" : "UUID"
+    },
     "roles" : {
       "type" : "List",
       "typeArguments" : [ {
