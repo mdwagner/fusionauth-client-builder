@@ -30,6 +30,9 @@
         "type" : "Object"
       } ]
     },
+    "emailConfiguration" : {
+      "type" : "EmailConfiguration"
+    },
     "id" : {
       "type" : "UUID"
     },

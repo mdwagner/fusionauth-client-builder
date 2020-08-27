@@ -1,0 +1,15 @@
+{
+  "packageName" : "io.fusionauth.domain",
+  "type" : "StatusConfiguration",
+  "implements" : [ {
+    "type" : "Buildable",
+    "typeArguments" : [ {
+      "type" : "StatusConfiguration"
+    } ]
+  } ],
+  "fields" : {
+    "requireAuthentication" : {
+      "type" : "boolean"
+    }
+  }
+}
