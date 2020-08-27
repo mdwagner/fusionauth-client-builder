@@ -1,11 +1,10 @@
 {
-  "packageName" : "io.fusionauth.domain.application",
-  "type" : "EmailConfiguration",
-  "description" : "/**\n * @author Daniel DeGroff\n */\n",
+  "packageName" : "io.fusionauth.domain",
+  "type" : "ApplicationEmailConfiguration",
   "implements" : [ {
     "type" : "Buildable",
     "typeArguments" : [ {
-      "type" : "EmailConfiguration"
+      "type" : "ApplicationEmailConfiguration"
     } ]
   } ],
   "fields" : {
