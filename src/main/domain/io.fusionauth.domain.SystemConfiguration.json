@@ -43,9 +43,6 @@
     "reportTimezone" : {
       "type" : "ZoneId"
     },
-    "statusConfiguration" : {
-      "type" : "StatusConfiguration"
-    },
     "uiConfiguration" : {
       "type" : "UIConfiguration"
     }
