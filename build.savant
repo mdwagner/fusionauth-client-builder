@@ -188,6 +188,11 @@ target(name: "build-ruby", description: "Build the Ruby Client Library") {
       buildClient(template: "src/main/client/ruby.client.ftl", outputFile: "../fusionauth-ruby-client/lib/fusionauth/fusionauth_client.rb")
 }
 
+target(name: "build-crystal", description: "Build the Crystal Client Library") {
+  clientLibrary.
+      buildClient(template: "src/main/client/crystal.client.ftl", outputFile: "./fusionauth_client.cr")
+}
+
 target(name: "build-swift", description: "Build the Swift Client Library") {
   clientLibrary.
       buildClient(template: "src/main/client/swift.client.ftl", outputFile: "../fusionauth-swift-client/fusionauth/FusionAuthClient.swift")
