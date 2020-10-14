@@ -1,5 +1,6 @@
 [#import "_macros.ftl" as global/]
-require 'fusionauth/rest_client'
+require "json"
+require "fusionauth/rest_client"
 
 #
 # Copyright (c) 2018-2019, FusionAuth, All Rights Reserved
@@ -23,7 +24,11 @@ module FusionAuth
   #
   # Each method on this class calls one of the APIs for FusionAuth.
   class FusionAuthClient
-    property api_key : String, base_url : String, connect_timeout = 1000, read_timeout = 2000, tenant_id : String?
+    property api_key : String,
+             base_url : String,
+             connect_timeout = 1000,
+             read_timeout = 2000,
+             tenant_id : String?
 
     def initialize(@api_key, @base_url)
     end
@@ -55,20 +60,20 @@ module FusionAuth
       body = {
         [#list api.params![] as param]
           [#if param.type == "form"]
-        "${param.name}" => ${(param.constant?? && param.constant)?then("\""+param.value+"\"", param.name)}[#if param?has_next],[/#if]
+        "${param.name}" => ${(param.constant?? && param.constant)?then("\""+param.value+"\"", param.name)},
           [/#if]
         [/#list]
       }
       [/#if]
-      start[#if api.anonymous??]Anonymous[/#if].uri('${api.uri}')
+      start[#if api.anonymous??]Anonymous[/#if].uri("${api.uri}")
       [#if api.authorization??]
-          .authorization(${api.authorization?replace('encodedJWT', 'encoded_jwt')?replace('\"', '\'')})
+          .authorization(${api.authorization?replace('encodedJWT', 'encoded_jwt')})
       [/#if]
       [#list api.params![] as param]
         [#if param.type == "urlSegment"]
           .url_segment(${(param.constant?? && param.constant)?then(param.value, camel_to_underscores(param.name))})
         [#elseif param.type == "urlParameter"]
-          .url_parameter('${param.parameterName}', ${(param.constant?? && param.constant)?then(param.value, camel_to_underscores(param.name?replace("end", "_end")))})
+          .url_parameter("${param.parameterName}", ${(param.constant?? && param.constant)?then(param.value, camel_to_underscores(param.name?replace("end", "_end")))})
         [#elseif param.type == "body"]
           .body_handler(FusionAuth::JSONBodyHandler.new(${camel_to_underscores(param.name)}))
         [/#if]
@@ -104,13 +109,4 @@ module FusionAuth
       client
     end
   end
-
-  [#list domain?sort_by("type") as d]
-  [#if d.description??]
-  ${d.description?replace("\n *", "\n #")?replace("/**", " #")?replace("//", " #")?replace("/", "")}[#t]
-  [/#if]
-  [#if d.fields??]
-  alias ${d.type} = JSON::Any
-  [/#if]
-  [/#list]
 end
