@@ -1,5 +1,6 @@
 [#import "_macros.ftl" as global/]
 require "json"
+require "uri"
 require "./rest_client"
 
 #
@@ -28,7 +29,7 @@ module FusionAuth
              base_url : String,
              connect_timeout = 1000,
              read_timeout = 2000,
-             tenant_id : String?
+             tenant_id : String? = nil
 
     def initialize(@api_key, @base_url)
     end
@@ -92,21 +93,18 @@ module FusionAuth
     # @return [RESTClient] The RESTClient
     #
     private def start
-      client = startAnonymous.authorization(@api_key)
-      client
+      startAnonymous.authorization(@api_key)
     end
 
     private def startAnonymous
-      client = RESTClient.new
-                        .success_response_handler(FusionAuth::JSONResponseHandler.new(JSON::Any))
-                        .error_response_handler(FusionAuth::JSONResponseHandler.new(JSON::Any))
-                        .url(@base_url)
-                        .connect_timeout(@connect_timeout)
-                        .read_timeout(@read_timeout)
-      if @tenant_id != nil
-        client.header("X-FusionAuth-TenantId", @tenant_id)
-      end
-      client
+      RESTClient.new(URI.parse(@base_url))
+        .connect_timeout(@connect_timeout)
+        .read_timeout(@read_timeout)
+        .tap do |client|
+          if !@tenant_id.nil?
+            client.header("X-FusionAuth-TenantId", @tenant_id.not_nil!)
+          end
+        end
     end
   end
 end
