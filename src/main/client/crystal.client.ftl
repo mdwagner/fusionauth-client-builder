@@ -1,6 +1,6 @@
 [#import "_macros.ftl" as global/]
 require "json"
-require "fusionauth/rest_client"
+require "./rest_client"
 
 #
 # Copyright (c) 2018-2019, FusionAuth, All Rights Reserved
